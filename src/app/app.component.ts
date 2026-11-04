@@ -18,6 +18,7 @@ type Project = {
   templateUrl: './app.component.html'
 })
 export class AppComponent {
+  readonly currentYear = new Date().getFullYear();
   menuOpen = false;
 
   readonly skills = [
