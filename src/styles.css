@@ -188,3 +188,59 @@ h1>span:first-of-type,h2 span{color:var(--blue)}
   .experience-section .timeline-content {padding:22px 18px}
   .experience-section .timeline-content ul {gap:10px}
 }
+
+/* Ajuste final: area de seguranca da timeline profissional */
+.experience-section .section-heading { margin-bottom: 68px; }
+.experience-section .timeline { padding-left: 48px; }
+.experience-section .timeline-date { margin-bottom: 22px; padding-left: 22px; }
+.experience-section .timeline-content { margin-left: 22px; padding: clamp(28px, 3.5vw, 44px); }
+.experience-section .timeline-marker { left: -54px; }
+@media (max-width: 700px) {
+  .experience-section .section-heading { margin-bottom: 44px; }
+  .experience-section .timeline { padding-left: 22px; }
+  .experience-section .timeline-date { padding-left: 10px; margin-bottom: 18px; }
+  .experience-section .timeline-content { margin-left: 10px; padding: 24px 20px; }
+  .experience-section .timeline-marker { left: -28px; }
+}
+
+
+/* Padronizacao das secoes 02 e 04: mesmo eixo e respiro */
+.skills-section,
+.experience-section {
+  padding-left: clamp(20px, 3vw, 44px);
+  padding-right: clamp(20px, 3vw, 44px);
+  scroll-margin-top: 95px;
+}
+.skills-section > .section-heading,
+.experience-section > .section-heading {
+  padding-top: 14px;
+  margin-bottom: 44px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.skills-section > .section-heading .eyebrow,
+.experience-section > .section-heading .eyebrow {
+  margin-top: 0;
+}
+.experience-section .timeline {
+  margin-left: 7px;
+  padding-left: 40px;
+}
+.experience-section .timeline-date {
+  padding-left: 0;
+  margin-bottom: 18px;
+}
+.experience-section .timeline-content {
+  margin-left: 0;
+  padding: clamp(26px, 3vw, 38px);
+}
+.experience-section .timeline-marker { left: -46px; }
+@media (max-width:700px) {
+  .skills-section,.experience-section { padding-left:18px; padding-right:18px; }
+  .skills-section > .section-heading,
+  .experience-section > .section-heading { padding-top:0; margin-bottom:30px; }
+  .experience-section .timeline { padding-left:25px; }
+  .experience-section .timeline-marker { left:-31px; }
+  .experience-section .timeline-content { margin-left:0; padding:22px 18px; }
+  .experience-section .timeline-date { padding-left:0; margin-bottom:15px; }
+}
