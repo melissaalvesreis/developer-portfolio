@@ -2,7 +2,7 @@
   <header class="topbar">
     <a class="brand" href="#home" aria-label="Voltar ao início" (click)="closeMenu()">
       <span class="brand-mark">&lt;/&gt;</span>
-      <span>Meu <span class="brand-accent">Portfólio</span></span>
+      <span>Melissa <span class="brand-accent">Reis</span></span>
     </a>
 
     <button class="menu-toggle" type="button" (click)="toggleMenu()" [attr.aria-expanded]="menuOpen" aria-label="Abrir menu">
@@ -34,7 +34,7 @@
         </div>
         <div class="social-links">
           <a href="https://github.com/melissaalvesreis" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://www.linkedin.com/in/melissaalvesreis/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           <span class="social-separator"></span>
           <span>Brasil · Remoto</span>
         </div>
@@ -78,8 +78,8 @@
       <div class="about-grid">
         <div class="about-text">
           <p class="lead">Sou desenvolvedora Full Stack, com foco na criação e evolução de aplicações web.</p>
-          <p>Tenho experiência com desenvolvimento de interfaces utilizando Angular e TypeScript, integração com serviços e APIs, além de atuação em back-end com Node.js e NestJS.</p>
-          <p>Gosto de investigar problemas, entender regras de negócio e transformar necessidades reais em soluções bem estruturadas, seguras e fáceis de utilizar.</p>
+          <p>Tenho experiência no desenvolvimento de aplicações com Java no back-end e Angular no front-end, além de integração com APIs REST e GraphQL.</p>
+          <p>Atuo com automação de processos, MongoDB, SharePoint, Power Automate, Jenkins e testes automatizados. Tenho perfil analítico e foco na resolução de problemas, melhoria de performance e entrega de valor.</p>
         </div>
         <div class="about-highlights">
           <div class="highlight-card"><span class="highlight-icon">⌘</span><div><strong>Visão Full Stack</strong><small>Do componente à integração com APIs.</small></div></div>
@@ -118,7 +118,6 @@
             <h3>{{ project.title }}</h3>
             <p>{{ project.description }}</p>
             <div class="tag-list"><span *ngFor="let tech of project.technologies">{{ tech }}</span></div>
-            <a *ngIf="project.link" class="project-visit" [href]="project.link" target="_blank" rel="noopener noreferrer">Visitar projeto ↗</a>
           </div>
         </article>
       </div>
@@ -133,21 +132,24 @@
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-marker"></div>
-          <div class="timeline-date">EXPERIÊNCIA EM DESENVOLVIMENTO</div>
+          <div class="timeline-date">2022 – 2026</div>
           <div class="timeline-content">
             <h3>Desenvolvedora Full Stack</h3>
-            <p class="timeline-subtitle">Sistemas web · Aplicações corporativas</p>
-            <p>Desenvolvimento e manutenção de funcionalidades front-end e back-end, integração com APIs, implementação de regras de negócio, correção de bugs e aprimoramento de fluxos de autenticação e autorização.</p>
+            <p class="timeline-subtitle">Arctica Soluções em Tecnologia</p>
+            <p>Desenvolvedora Full Stack com experiência em aplicações corporativas usando Java no back-end e Angular no front-end, integração de sistemas e automação de processos, com foco em desempenho, qualidade e entrega de valor.</p>
             <ul>
-              <li>Construção e evolução de interfaces com Angular e TypeScript.</li>
-              <li>Desenvolvimento e integração de serviços utilizando NestJS e APIs REST.</li>
-              <li>Atuação em autenticação JWT, SSO e controle de permissões.</li>
-              <li>Criação e manutenção de testes com Jest.</li>
+              <li>Desenvolvimento de aplicações com Java (back-end) e Angular (front-end).</li>
+              <li>Integração de sistemas por APIs REST e GraphQL.</li>
+              <li>Testes automatizados com Cucumber, Selenium e JUnit.</li>
+              <li>Manutenção e otimização de pipelines com Jenkins.</li>
+              <li>Trabalho com MongoDB (NoSQL).</li>
+              <li>Soluções corporativas com SharePoint e Power Automate.</li>
+              <li>Monitoramento e análise de logs com Splunk Enterprise.</li>
+              <li>Participação em equipes ágeis com Scrum e Kanban.</li>
             </ul>
           </div>
         </div>
       </div>
-      <p class="project-note">Personalize esta seção com o nome da empresa, período e resultados que você possa divulgar.</p>
     </section>
 
     <section class="contact-section" id="contato">
@@ -157,7 +159,7 @@
         <p>Estou aberta a conversar sobre oportunidades, projetos e desafios em tecnologia.</p>
         <a class="button button-primary contact-button" href="mailto:seuemail&#64;email.com">Entre em contato <span>↗</span></a>
         <div class="contact-links">
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://www.linkedin.com/in/melissaalvesreis/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           <a href="https://github.com/melissaalvesreis" target="_blank" rel="noreferrer">GitHub ↗</a>
           <a href="mailto:seuemail&#64;email.com">E-mail ↗</a>
         </div>
@@ -166,6 +168,6 @@
   </main>
 
   <footer class="footer">
-    <div class="section-wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>Meu <span class="brand-accent">Portfólio</span></span></a><span>Desenvolvido com Angular & TypeScript</span><span>© {{ currentYear }} · Todos os direitos reservados</span></div>
+    <div class="section-wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>Melissa <span class="brand-accent">Reis</span></span></a><span>Desenvolvido com Angular & TypeScript</span><span>© {{ currentYear }} · Todos os direitos reservados</span></div>
   </footer>
 </div>

@@ -35,14 +35,23 @@ export class AppComponent {
     { name: 'Jest', level: 'Experiência prática', group: 'Qualidade' },
     { name: 'JWT & SSO', level: 'Experiência prática', group: 'Segurança' },
     { name: 'Git & GitHub', level: 'Experiência prática', group: 'Ferramentas' },
-    { name: 'SQL', level: 'Conhecimento', group: 'Dados' }
+    { name: 'SQL', level: 'Conhecimento', group: 'Dados' },
+    { name: 'Java', level: 'Experiência profissional', group: 'Back-end' },
+    { name: 'Python', level: 'Conhecimento', group: 'Back-end' },
+    { name: 'PHP', level: 'Experiência em projetos', group: 'Back-end' },
+    { name: 'MongoDB', level: 'Experiência profissional', group: 'Dados' },
+    { name: 'GraphQL', level: 'Experiência profissional', group: 'Integrações' },
+    { name: 'Jenkins', level: 'Experiência profissional', group: 'DevOps' },
+    { name: 'Cucumber / Selenium / JUnit', level: 'Experiência profissional', group: 'Testes' },
+    { name: 'SharePoint / Power Automate', level: 'Experiência profissional', group: 'Automação' },
+    { name: 'Splunk Enterprise', level: 'Experiência profissional', group: 'Observabilidade' }
   ];
 
   readonly projects: Project[] = [
-    { number: '01', title: 'Magda Féo Cerimoniais', category: 'Sistema web', description: 'Plataforma de gestão de eventos, convidados, RSVP, equipe, fornecedores e organização do cerimonial.', technologies: ['Sistemas web', 'Gestão', 'RSVP'], status: 'Projeto selecionado', featured: true, image: 'projects/magda.jpg' },
-    { number: '02', title: 'Stêverso', category: 'Website e e-commerce', description: 'Plataforma digital para autora com apresentação de livros, universos, loja e área administrativa.', technologies: ['Website', 'E-commerce', 'Administração'], status: 'Projeto selecionado', image: 'projects/steverso.jpg' },
-    { number: '03', title: 'UniVamp', category: 'PWA e experiência interativa', description: 'Experiência de seleção com 16 perguntas, resultados por família e suporte a uso offline.', technologies: ['PWA', 'Quiz', 'Offline'], status: 'Projeto selecionado', image: 'projects/univamp.jpg' },
-    { number: '04', title: 'Dragon Clash', category: 'Jogo 3D interativo', description: 'Projeto de jogo com dragões e arena de combate. Explore a versão publicada.', technologies: ['Game Design', '3D', 'Web'], status: 'Versão demonstrativa', image: 'projects/dragon-clash.jpg', link: 'https://dragon-clash-beta.pages.dev/' }
+    { number: '01', title: 'Magda Féo Cerimoniais', category: 'Sistema web', description: 'Plataforma de gestão de eventos, convidados, RSVP, equipe, fornecedores e organização do cerimonial.', technologies: ['Sistemas web', 'Gestão', 'RSVP'], status: 'Projeto selecionado', featured: true, image: '/projects/magda.png' },
+    { number: '02', title: 'Stêverso', category: 'Website e e-commerce', description: 'Plataforma digital para autora com apresentação de livros, universos, loja e área administrativa.', technologies: ['Website', 'E-commerce', 'Administração'], status: 'Projeto selecionado', image: '/projects/steverso.png' },
+    { number: '03', title: 'UniVamp', category: 'PWA e experiência interativa', description: 'Experiência de seleção com 16 perguntas, resultados por família e suporte a uso offline.', technologies: ['PWA', 'Quiz', 'Offline'], status: 'Projeto selecionado', image: '/projects/univamp.png' },
+    { number: '04', title: 'Dragon Clash', category: 'Jogo 3D interativo', description: 'Projeto de jogo com dragões e arena de combate. Explore a versão publicada.', technologies: ['Game Design', '3D', 'Web'], status: 'Versão demonstrativa', image: '/projects/dragon-clash.png' }
   ];
 
   toggleMenu(): void {
