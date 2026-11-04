@@ -9,6 +9,8 @@ type Project = {
   technologies: string[];
   status: string;
   featured?: boolean;
+  image: string;
+  link?: string;
 };
 
 @Component({
@@ -37,31 +39,10 @@ export class AppComponent {
   ];
 
   readonly projects: Project[] = [
-    {
-      number: '01',
-      title: 'Plataforma corporativa',
-      category: 'Sistemas empresariais',
-      description: 'Atuação em uma aplicação corporativa com gestão de usuários, permissões, autenticação e regras de negócio. Trabalho envolvendo melhorias de interface, integração com APIs e evolução de funcionalidades.',
-      technologies: ['Angular', 'TypeScript', 'NestJS', 'PrimeNG', 'Jest'],
-      status: 'Experiência profissional',
-      featured: true
-    },
-    {
-      number: '02',
-      title: 'Autenticação e controle de acesso',
-      category: 'Back-end · Segurança',
-      description: 'Implementação e manutenção de fluxos de autenticação local e SSO, validação de sessão via JWT, controle de permissões e aplicação de regras de acesso conforme o estado da organização e do usuário.',
-      technologies: ['NestJS', 'JWT', 'SSO', 'TypeScript', 'APIs REST'],
-      status: 'Experiência profissional'
-    },
-    {
-      number: '03',
-      title: 'Dragon Clash',
-      category: 'Game development',
-      description: 'Conceito de jogo mobile 3D com dragões elementais, arena de combate, voo livre e evolução de habilidades. Projeto em fase inicial de desenvolvimento e experimentação.',
-      technologies: ['Godot', 'GDScript', 'Game Design', '3D'],
-      status: 'Em desenvolvimento'
-    }
+    { number: '01', title: 'Magda Féo Cerimoniais', category: 'Sistema web', description: 'Plataforma de gestão de eventos, convidados, RSVP, equipe, fornecedores e organização do cerimonial.', technologies: ['Sistemas web', 'Gestão', 'RSVP'], status: 'Projeto selecionado', featured: true, image: 'projects/magda.jpg' },
+    { number: '02', title: 'Stêverso', category: 'Website e e-commerce', description: 'Plataforma digital para autora com apresentação de livros, universos, loja e área administrativa.', technologies: ['Website', 'E-commerce', 'Administração'], status: 'Projeto selecionado', image: 'projects/steverso.jpg' },
+    { number: '03', title: 'UniVamp', category: 'PWA e experiência interativa', description: 'Experiência de seleção com 16 perguntas, resultados por família e suporte a uso offline.', technologies: ['PWA', 'Quiz', 'Offline'], status: 'Projeto selecionado', image: 'projects/univamp.jpg' },
+    { number: '04', title: 'Dragon Clash', category: 'Jogo 3D interativo', description: 'Projeto de jogo com dragões e arena de combate. Explore a versão publicada.', technologies: ['Game Design', '3D', 'Web'], status: 'Versão demonstrativa', image: 'projects/dragon-clash.jpg', link: 'https://dragon-clash-beta.pages.dev/' }
   ];
 
   toggleMenu(): void {
